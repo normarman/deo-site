@@ -1,0 +1,256 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      h1{
+        font-size: 50px;
+      }
+    </style>
+    <title>start page</title>
+
+  </head>
+  <body>
+  <div>
+    <header class="start w3-container w3-center" >
+
+        <h1 class="w3-container w3-red w3-hover-gray w3-animate-opacity"> <a href="menu.html">Taeyeon</a> </h1>
+        <p class="w3-pannel w3-topbar w3-border-black w3-animate-opacity " >뭘까</p>
+      </header>
+      </div>
+    <div>
+      <div>
+        <div class="w3-row-padding">
+          <div class="w3-col s3 w3-container">
+          <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Nature');">
+            <img src="img1.jpg" alt="Nature" style="width:100%">
+          </a>
+          </div>
+          <div class="w3-col s3 w3-container">
+            <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Snow');">
+              <img src="img2.jpg" alt="Snow" style="width:100%">
+            </a>
+          </div>
+          <div class="w3-col s3 w3-container">
+            <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Mountains');">
+              <img src="img3.jpg" alt="Mountains" style="width:100%">
+            </a>
+          </div>
+          <div class="w3-col s3 w3-container">
+            <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Lights');">
+              <img src="dio.jpg" alt="Lights" style="width:100%">
+            </a>
+          </div>
+        </div><br>
+
+        <div id="Nature" class="picture w3-display-container" style="display:none">
+          <img src="img1.jpg" alt="Nature" style="width:50%">
+          <span onclick="this.parentElement.style.display='none'"
+          class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+          <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Nature</div>
+        </div>
+
+        <div id="Snow" class="picture w3-display-container" style="display:none">
+          <img src="img2.jpg" alt="Snow" style="width:50%">
+          <span onclick="this.parentElement.style.display='none'"
+          class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+          <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Snow</div>
+        </div>
+
+        <div id="Mountains" class="picture w3-display-container" style="display:none">
+          <img src="img3.jpg" alt="Mountains" style="width:50%">
+          <span onclick="this.parentElement.style.display='none'"
+          class="w3-display-topright w3-button w3-transparent">&times;</span>
+          <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Mountains</div>
+        </div>
+
+        <div id="Lights" class="picture w3-display-container" style="display:none">
+          <img src="dio.jpg" alt="Lights" style="width:50%">
+          <span onclick="this.parentElement.style.display='none'"
+          class="w3-display-topright w3-button w3-transparent w3-text-white">&times;</span>
+          <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Northern Lights</div>
+        </div>
+      </div>
+        <script>
+        function openImg(imgName) {
+          var i, x;
+          x = document.getElementsByClassName("picture");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          document.getElementById(imgName).style.display = "block";
+        }
+        </script>
+  </div>
+
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-black">Hover Over Me!</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+  </div>
+
+      <div class="w3-block-bar w3-black" style="width:100px">
+        <h2 class="w3-bar-item ">Menu</h2>
+        <a href="#" class="w3-bar-item w3-hover-red">London</a>
+        <a href="#" class="w3-bar-item w3-hover-green">Paris</a>
+        <a href="#" class="w3-bar-item w3-hover-blue">Tokyo</a>
+      </div>
+<div>
+        <form class="w3-container w3-card-4" action="/action_page.php">
+  <h2 class="w3-bar w3-red" style="width:200px">골라보렴</h2>
+
+  <select class="w3-select w3-border" name="option">
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+    <option value="4"> 4</option>
+  </select>
+  <p><button class="w3-btn w3-teal">Register</button></p>
+</form>
+</div>
+
+     <div>
+        <button class="w3-button w3-hover-purple ">Purple</button>
+     </div>
+
+     <div class="w3-bar">
+       <button class="w3-button w3-circle w3-black">+</button>
+       <button class="w3-button w3-black">Button</button>
+       <button class="w3-button w3-teal">Button</button>
+       <button class="w3-button w3-red">Button</button>
+    </div>
+        <div>
+        <table class="w3-table w3-striped w3-border w3-hoverable">
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Points</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>Adam</td>
+              <td>Johnson</td>
+              <td>67</td>
+            </tr>
+          </table>
+          </div>
+        <div>
+          <div class="w3-container">
+            <h2>Filter Table</h2>
+            <p>Search for a name in the input field.</p>
+
+            <input class="w3-input w3-border w3-padding" type="text" placeholder="Search for names.." id="myInput" onkeyup="myFunction()">
+
+            <table class="w3-table-all w3-margin-top" id="myTable">
+              <tr>
+                <th style="width:60%;">Name</th>
+                <th style="width:40%;">Country</th>
+              </tr>
+              <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Germany</td>
+              </tr>
+              <tr>
+                <td>Berglunds snabbkop</td>
+                <td>Sweden</td>
+              </tr>
+              <tr>
+                <td>Island Trading</td>
+                <td>UK</td>
+              </tr>
+              <tr>
+                <td>Koniglich Essen</td>
+                <td>Germany</td>
+              </tr>
+              <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Canada</td>
+              </tr>
+              <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Italy</td>
+              </tr>
+              <tr>
+                <td>North/South</td>
+                <td>UK</td>
+              </tr>
+              <tr>
+                <td>Paris specialites</td>
+                <td>France</td>
+              </tr>
+            </table>
+
+            <p><strong>Tip:</strong> Remove toUpperCase() if you want to perform a case-sensitive search.</p>
+            <p>Change tr[i].getElementsByTagName('td')[0] to [1] if you want to search for "Country" (index 1) instead of "Name" (index 0).</p>
+          </div>
+
+          <script>
+          function myFunction() {
+            var input, filter, table, tr, td, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  tr[i].style.display = "";
+                } else {
+                  tr[i].style.display = "none";
+                }
+              }
+            }
+          }
+          </script>
+      </div>
+
+<div>
+    <p>
+     <div id="disqus_thread"></div>
+ <script>
+
+ /**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+ /*
+ var disqus_config = function () {
+ this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+ };
+ */
+ (function() { // DON'T EDIT BELOW THIS LINE
+ var d = document, s = d.createElement('script');
+ s.src = 'https://web1-2.disqus.com/embed.js';
+ s.setAttribute('data-timestamp', +new Date());
+ (d.head || d.body).appendChild(s);
+ })();
+ </script>
+ <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+   </p>
+   </div>
+   <footer>
+     fypf
+     </footer>
+  </body>
+</html>
